@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Infrangible\CmsGroup\Model\Product\Attribute\Source;
+namespace Infrangible\CmsGroup\Model\Entity\Attribute\Source;
 
 use Infrangible\CmsGroup\Model\Group;
 use Magento\Cms\Model\Block;
