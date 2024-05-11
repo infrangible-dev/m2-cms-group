@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!--
+ * @author      Andreas Knollmann
+ * @copyright   Copyright (c) 2014-2024 Softwareentwicklung Andreas Knollmann
+ * @license     http://www.opensource.org/licenses/mit-license.php MIT
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Cms\Block\Adminhtml\Block\Widget\Chooser" type="Infrangible\CmsGroup\Block\Adminhtml\Block\Widget\Chooser"/>
+    <type name="Magento\Catalog\Model\Category\Attribute\Source\Page">
+        <plugin name="infrangible_cms_group" type="Infrangible\CmsGroup\Plugin\Catalog\Category\Attribute\Source\Page"/>
+    </type>
+    <type name="Magento\Cms\Model\Config\Source\Block">
+        <plugin name="infrangible_cms_group" type="Infrangible\CmsGroup\Plugin\Cms\Model\Config\Source\Block"/>
+    </type>
+    <type name="Magento\Cms\Model\Config\Source\Page">
+        <plugin name="infrangible_cms_group" type="Infrangible\CmsGroup\Plugin\Cms\Model\Config\Source\Page"/>
+    </type>
+    <type name="Infrangible\Core\Model\Config\Source\CmsBlock">
+        <plugin name="infrangible_cms_group" type="Infrangible\CmsGroup\Plugin\Core\Model\Config\Source\CmsBlock"/>
+    </type>
+</config>

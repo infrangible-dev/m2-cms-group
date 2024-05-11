@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * @author      Andreas Knollmann
+ * @copyright   Copyright (c) 2014-2024 Softwareentwicklung Andreas Knollmann
+ * @license     http://www.opensource.org/licenses/mit-license.php MIT
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="cms_page_columns">
+        <column name="group_id" component="Magento_Ui/js/grid/columns/select">
+            <settings>
+                <label translate="true">Group</label>
+                <options class="Infrangible\CmsGroup\Model\Config\Source\Group"/>
+                <filter>select</filter>
+                <dataType>select</dataType>
+                <sortable>false</sortable>
+            </settings>
+        </column>
+    </columns>
+</listing>
