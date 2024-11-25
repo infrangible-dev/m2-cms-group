@@ -15,21 +15,15 @@ use Magento\Framework\Data\Collection\AbstractDb;
 class Grid
     extends \Infrangible\BackendWidget\Block\Grid
 {
-    /**
-     * @param AbstractDb $collection
-     *
-     * @return void
-     */
-    protected function prepareCollection(AbstractDb $collection)
+    protected function prepareCollection(AbstractDb $collection): void
     {
         $collection->addFieldToFilter('system', ['eq' => 0]);
     }
 
     /**
-     * @return void
      * @throws Exception
      */
-    protected function prepareFields()
+    protected function prepareFields(): void
     {
         $this->addNumberColumn('group_id', __('Id')->render());
         $this->addTextColumn('name', __('Name')->render());
